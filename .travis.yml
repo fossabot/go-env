@@ -1,0 +1,28 @@
+language: go
+
+go:
+  - "1.12.x"
+  - master
+
+matrix:
+  allow_failures:
+    - go: master
+  fast_finish: true
+
+cache:
+  directories:
+    - $HOME/.cache/go-build
+    - $HOME/gopath/pkg/mod
+
+env:
+  global:
+    - GO111MODULE=on
+
+script:
+  - diff -u <(echo -n) <(gofmt -d -s .)
+  - go generate -x ./... && git diff --exit-code; code=$?; git checkout -- .; (exit $code)
+  - go vet ./...
+  - go test -v -race -coverprofile=coverage.txt -covermode=atomic ./...
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
