@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/theecodedragon/go-env.svg?branch=master)](https://travis-ci.org/theecodedragon/go-env)
 [![codecov](https://codecov.io/gh/theecodedragon/go-env/branch/master/graph/badge.svg)](https://codecov.io/gh/TechnionYP5777/project-name)
-[![Go Report Card](https://goreportcard.com/badge/github.com/jayhuang75/gin-jwt-middleware)](https://goreportcard.com/report/github.com/jayhuang75/gin-jwt-middleware)
+[![Go Report Card](https://goreportcard.com/badge/github.com/theecodedragon/go-env)](https://goreportcard.com/report/github.com/theecodedragon/go-env)
 ## Go ENV
 
 
