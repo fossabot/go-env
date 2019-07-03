@@ -1,4 +1,4 @@
-package go_env
+package goenv
 
 import (
 	"testing"
