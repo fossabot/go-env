@@ -7,12 +7,12 @@ import (
 var Env *viper.Viper
 
 // Environment Initialization
-func Init(env string, parser string, path string) error{
+func Init(env string, parser string, path string) error {
 	var err error
 	Env = viper.New()
 	Env.SetConfigType(parser)
 	Env.SetConfigName(env)
-	Env.AddConfigPath(path+"/")
+	Env.AddConfigPath(path + "/")
 	err = Env.ReadInConfig()
 	if err != nil {
 		return err
