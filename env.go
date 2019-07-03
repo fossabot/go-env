@@ -4,7 +4,7 @@ import (
 	"github.com/spf13/viper"
 )
 
-// Env
+// Env ...
 var Env *viper.Viper
 
 // Environment Initialization
