@@ -1,4 +1,4 @@
-module github.com/theecodedragon/go-env
+module github.com/shaurya-xyz/go-env
 
 go 1.12
 
